@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { connect } from "react-redux";
 import PrivateRoute from "./utils/privateRoute";
 import './App.css';
 import Login from "./components/login";
@@ -20,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default connect(state => state, null)(App);

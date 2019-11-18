@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { axiosWithAuth } from "./../utils/axiosWithAuth";
+import { connect } from "react-redux";
 
 const Login = (props) => {
 
@@ -53,4 +54,4 @@ const Login = (props) => {
     );
 };
 
-export default Login;
+export default connect(state => state, null)(Login);

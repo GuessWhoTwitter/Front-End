@@ -1,6 +1,12 @@
-import { LOGIN, LOGOUT, ADD_SCORE, ADD_LEVEL, SUBMIT_ANSWER } from './../actions/actionCreators';
+import { LOGIN, LOGOUT, ADD_SCORE, ADD_LEVEL, SUBMIT_ANSWER } from './../actions/actionCreator';
 
 export const initialState = {
+    credentials: {
+        username: '',
+        password: ''
+    },
+    level: 0,
+    score: 0
 
 };
 
