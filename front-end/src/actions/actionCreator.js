@@ -3,7 +3,14 @@ export const LOGOUT = 'LOGOUT';
 export const SUBMIT_ANSWER = 'SUBMIT_ANSWER';
 export const ADD_SCORE = 'ADD_SCORE';
 export const ADD_LEVEL = 'ADD_LEVEL';
+export const SIGN_UP = 'SIGN_UP';
 
+export const signUp = details => {
+    return {
+        type: SIGN_UP,
+        payload: details
+    }
+};
 
 export const logout = logout => {
     return {
@@ -12,10 +19,10 @@ export const logout = logout => {
     }
 };
 
-export const login = login => {
+export const login = credentials => {
     return {
         type: LOGIN,
-        payload: login
+        payload: credentials
     }
 };
 
