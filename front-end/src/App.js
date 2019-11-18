@@ -5,6 +5,7 @@ import PrivateRoute from "./utils/privateRoute";
 import './App.css';
 import Login from "./components/login";
 import MainScreen from "./components/mainScreen";
+import PlayScreen from "./components/plsyScreen";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/" component={Login} />
           <PrivateRoute path="/main-screen">
             <Route exact path="/main-screen" component={MainScreen} />
+            <Route exact path="/play-screen" component={MainScreen} />
           </PrivateRoute>
         </Switch>
       </div>

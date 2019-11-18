@@ -1,6 +1,7 @@
 import { LOGIN, LOGOUT, ADD_SCORE, ADD_LEVEL, SUBMIT_ANSWER } from './../actions/actionCreator';
 
 export const initialState = {
+    loggedIn: false,
     credentials: {
         username: '',
         password: ''
